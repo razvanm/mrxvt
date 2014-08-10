@@ -1,0 +1,19 @@
+- Improve documentation...
+
+- Extend menu language / facility
+
+- UTF-8 support
+
+- Splitting window support
+
+- I18N support
+
+- Searching scroll buffer support
+
+- Extensible timer support
+
+- Reduce X resource usage, like Window, Pixmap, etc.
+
+- Xterm style mouse support, e.g., joe 3.2
+
+- PNG and JPEG background support on Solaris looks broken
