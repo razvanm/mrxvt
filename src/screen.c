@@ -158,8 +158,8 @@ void rxvt_blank_screen_mem        (rxvt_t*, int, text_t**, rend_t **, unsigned i
 void rxvt_scr_reset_realloc       (rxvt_t*, int);
 void rxvt_scr_delete_row          (rxvt_t*, int);
 void rxvt_scr_add_row             (rxvt_t*, int, unsigned int, unsigned int);
-void inline rxvt_clear_area       (rxvt_t*, int page, int x, int y, unsigned int w, unsigned int h);
-void inline rxvt_fill_rectangle   (rxvt_t*, int page, int x, int y, unsigned int w, unsigned int h);
+void static inline rxvt_clear_area       (rxvt_t*, int page, int x, int y, unsigned int w, unsigned int h);
+void static inline rxvt_fill_rectangle   (rxvt_t*, int page, int x, int y, unsigned int w, unsigned int h);
 void rxvt_scr_draw_string         (rxvt_t* r, int page, int x, int y, char* str, int len, int drawfunc, RUINT16T fore, RUINT16T back);
 void rxvt_scr_adjust_col          (rxvt_t*, int, unsigned int);
 void rxvt_set_font_style          (rxvt_t*, int);
@@ -2213,7 +2213,7 @@ rxvt_free_clipping (rxvt_t* r, GC gc)
 #endif	/* TEXT_SHADOW */
 
 
-void inline
+void static inline
 rxvt_clear_area (rxvt_t* r, int page, int x, int y, unsigned int w, unsigned int h)
 {
 	/*
@@ -2230,7 +2230,7 @@ rxvt_clear_area (rxvt_t* r, int page, int x, int y, unsigned int w, unsigned int
 }
 
 
-void inline
+void static inline
 rxvt_fill_rectangle (rxvt_t* r, int page, int x, int y, unsigned int w, unsigned int h)
 {
 	/*
